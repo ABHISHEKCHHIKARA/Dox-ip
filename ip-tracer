@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Tool Name :- IP-Tracer
-# Author :- Rajkumar Dusad
-# Date :- 10/10/2018
-# Powered By :- Aex Software's
+# Tool Name :- Dox-ip
+# Author :- Aoxar
+# Powered By :- Aoxar 
+# Telegram :- @DarkwebInjector
 case "$1" in
   -m)
     php modules/.tracem.php
@@ -14,7 +14,7 @@ case "$1" in
     ;;
     *)
       echo "error : invalid arguments !!"
-      echo "use: ip-tracer -t <target_ip>"
+      echo "use: Dox-ip -t <target_ip>"
     ;;
     esac
   ;;
@@ -27,7 +27,7 @@ case "$1" in
     exit
   ;;
   start)
-    php .IP-Tracer.php
+    php .Dox-ip.php
     exit
   ;;
   -rm)
@@ -35,13 +35,13 @@ case "$1" in
     exit
   ;;
   *)
-    echo "Usage: ip-tracer [command]... [arguments]..."
+    echo "Usage: Dox-ip [command]... [arguments]..."
     echo " Commands:"
     echo " -t <target_ip>      to trace target ip."
     echo " -m                  to trace your own ip."
     echo " -h                  to show help."
-    echo " -u                  to update ip-tracer."
+    echo " -u                  to update Dox-ip."
     echo " help                to show help."
-    echo " update              to update ip-tracer."
-    echo " start               to start ip-tracer menu."
+    echo " update              to update Dox-ip."
+    echo " start               to start Dox-ip menu."
 esac
