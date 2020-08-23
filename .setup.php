@@ -5,59 +5,59 @@ class set {
     global $system;
     // removing old files
     if ($system=="termux") {
-      system("rm -rf /data/data/com.termux/files/usr/share/IP-Tracer");
-      system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
+      system("rm -rf /data/data/com.termux/files/usr/share/Dox-ip");
+      system("rm -rf /data/data/com.termux/files/usr/bin/Dox-ip");
       system("rm -rf /data/data/com.termux/files/usr/bin/trace");
     } elseif ($system=="ubuntu") {
-      system("sudo rm -rf /usr/bin/ip-tracer");
+      system("sudo rm -rf /usr/bin/Dox-ip");
       system("sudo rm -rf /usr/bin/trace");
-      system("sudo rm -rf /usr/share/IP-Tracer");
+      system("sudo rm -rf /usr/share/Dox-ip");
     } else {
-      system("rm -rf /usr/bin/ip-tracer");
+      system("rm -rf /usr/bin/Dox-ip");
       system("rm -rf /usr/bin/trace");
-      system("rm -rf /usr/share/IP-Tracer");
+      system("rm -rf /usr/share/Dox-ip");
     }
     
     // adding bin file
     if ($system=="termux") {
-      system("mv -v modules/ip-tracer /data/data/com.termux/files/usr/bin/");
+      system("mv -v modules/Dox-ip /data/data/com.termux/files/usr/bin/");
       system("mv -v modules/trace /data/data/com.termux/files/usr/bin/");
-      system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer trace");
+      system("chmod +x /data/data/com.termux/files/usr/bin/Dox-ip trace");
       system("chmod +x /data/data/com.termux/files/usr/bin/trace");
     } elseif ($system=="ubuntu") {
-      system("sudo mv -v modules/ip-tracer /usr/bin/");
+      system("sudo mv -v modules/Dox-ip /usr/bin/");
       system("sudo mv -v modules/trace /usr/bin/");
-      system("sudo chmod +x /usr/bin/ip-tracer");
+      system("sudo chmod +x /usr/bin/Dox-ip");
       system("sudo chmod +x /usr/bin/trace");
     } else {
-      system("mv -v modules/ip-tracer /usr/bin/");
+      system("mv -v modules/Dox-ip /usr/bin/");
       system("mv -v modules/trace /usr/bin/");
-      system("chmod +x /usr/bin/ip-tracer");
+      system("chmod +x /usr/bin/Dox-ip");
       system("chmod +x /usr/bin/trace");
     }
 
-    // copy files from IP-Tracer to .IP-Tracer directory.
+    // copy files from Dox-ip to .Dox-ip directory.
     if ($system=="termux") {
-      system("mkdir /data/data/com.termux/files/usr/share/IP-Tracer");
+      system("mkdir /data/data/com.termux/files/usr/share/Dox-ip");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP-Tracer/");
+      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/Dox-ip/");
     } elseif ($system=="ubuntu") {
-      system("sudo mkdir /usr/share/IP-Tracer/");
+      system("sudo mkdir /usr/share/Dox-ip/");
       system("sudo chmod +x * *.* .*.*");
-      system("sudo mv -v * *.* .*.* /usr/share/IP-Tracer/");
+      system("sudo mv -v * *.* .*.* /usr/share/Dox-ip/");
     } else {
-      system("mkdir /usr/share/IP-Tracer");
+      system("mkdir /usr/share/Dox-ip");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /usr/share/IP-Tracer/");
+      system("mv -v * *.* .*.* /usr/share/Dox-ip/");
     }
     
-    // removing IP-Tracer directory
+    // removing Dox-ip directory
     if ($system=="termux") {
-      system("cd .. && rm -rf IP-Tracer");
+      system("cd .. && rm -rf Dox-ip");
     } elseif ($system=="ubuntu") {
-      system("cd .. && sudo rm -rf IP-Tracer");
+      system("cd .. && sudo rm -rf Dox-ip");
     } else {
-      system("cd .. && rm -rf IP-Tracer");
+      system("cd .. && rm -rf Dox-ip");
     }
   }
   function logo() {
@@ -80,8 +80,8 @@ class set {
 \033[00m
 EOL;
 
-    if (file_exists("/usr/bin/ip-tracer") || file_exists("/data/data/com.termux/files/usr/bin/ip-tracer")) {
-      echo "\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n";
+    if (file_exists("/usr/bin/Dox-ip") || file_exists("/data/data/com.termux/files/usr/bin/Dox-ip")) {
+      echo "\033[01;32m      Dox-ip installed Successfully !!!\033[00m\n";
       echo <<<EOL
 
 \033[01;37m ----------------------------------------------
@@ -97,7 +97,7 @@ EOL;
 
 EOL;
     } else {
-      echo "\n\n\033[01;31m  Sorry IP-Tracer is not installed !!!\033[00m";
+      echo "\n\n\033[01;31m  Sorry Dox-ip is not installed !!!\033[00m";
     }
   }
 }
@@ -105,3 +105,4 @@ $a=new set;
 $a->Setup();
 $a->logo();
 ?>
+
