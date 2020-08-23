@@ -11,20 +11,20 @@ Dox-ip is used to track an ip address. Dox-ip is developed for Termux and Linux 
 
 * `git clone https://github.com/Aoxar/Dox-ip.git
 
-* `cd IP-Tracer`
+* `cd Dox-ip
 
 * `chmod +x install`
 
-* `sh install` or `./install`
+* `bash Dox-ip start`
 
 
 ## How to use Dox-ip
 
-* `trace -m` to track your own ip address.
+* `bash trace -m` to track your own ip address.
 
-* `trace -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
+* `bash trace -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
 
-* `trace` for more information.
+* `bash trace` for more information.
 
 **OR**
 
