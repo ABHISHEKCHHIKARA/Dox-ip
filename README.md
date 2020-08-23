@@ -9,9 +9,9 @@ Dox-ip is used to track an ip address. Dox-ip is developed for Termux and Linux 
 
 * `apt install git -y`
 
-* `git clone https://github.com/Aoxar/Dox-ip.git
+* `git clone git@github.com:Aoxar/Dox-ip.git`
 
-* `cd Dox-ip
+* `cd Dox-ip`
 
 * `chmod +x install`
 
