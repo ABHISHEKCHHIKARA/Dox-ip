@@ -36,5 +36,6 @@ Dox-ip is used to track an ip address. Dox-ip is developed for Termux and Linux 
 
 
 
-
-**[VIDEO TUTORIAL](https://www.youtube.com/watch?v=MHriGQhBU50&t=17s)**
+|---------------------------------------------------------------------------|
+|  **[VIDEO TUTORIAL](https://www.youtube.com/watch?v=MHriGQhBU50&t=17s)**  |
+|---------------------------------------------------------------------------|
