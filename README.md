@@ -28,9 +28,13 @@ Dox-ip is used to track an ip address. Dox-ip is developed for Termux and Linux 
 
 **OR**
 
-* `ip-tracer -m` to track your own ip address.
+* `bash Dox-ip -m` to track your own ip address.
 
-* `ip-tracer -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
+* `bash Dox-ip -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
 
-* `ip-tracer` for more information.
+* `bash Dox-ip` for more information.
 
+
+
+
+**VIDEO TUTORIAL[https://www.youtube.com/watch?v=MHriGQhBU50&t=17s]**
